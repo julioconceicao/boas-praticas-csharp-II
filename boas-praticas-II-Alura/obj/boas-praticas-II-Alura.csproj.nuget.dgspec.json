@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-II-Alura\\boas-praticas-II-Alura.csproj": {}
+    "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-ii-alura\\boas-praticas-II-Alura.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-II-Alura\\boas-praticas-II-Alura.csproj": {
+    "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-ii-alura\\boas-praticas-II-Alura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-II-Alura\\boas-praticas-II-Alura.csproj",
+        "projectUniqueName": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-ii-alura\\boas-praticas-II-Alura.csproj",
         "projectName": "boas-praticas-II-Alura",
-        "projectPath": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-II-Alura\\boas-praticas-II-Alura.csproj",
+        "projectPath": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-ii-alura\\boas-praticas-II-Alura.csproj",
         "packagesPath": "C:\\Users\\Julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-II-Alura\\obj\\",
+        "outputPath": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-ii-alura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Julio\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
