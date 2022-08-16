@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9h/XQOfcuhb9Mwha7h4ioDiTZ9fx3MqwxnbYPFWoIT7eGQutwuh69EKt7RvhQmUat6QcbXjeALn5Pd5Fs4FmHQ==",
+  "dgSpecHash": "f5+0zSxwHX50iTC5PSaQHmJc0QbSE0Lo/y6PzFPXj+lwY+H5Z8bCxl8VpJv4L4hoqO8Qj+eZsjWmRV1lkfcVjA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-ii-alura\\boas-praticas-II-Alura.csproj",
+  "projectFilePath": "C:\\Users\\Julio\\Documents\\repos\\ALURA\\boas-praticas-csharp-II\\boas-praticas-II-Alura\\boas-praticas-II-Alura.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Julio\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
