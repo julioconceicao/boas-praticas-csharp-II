@@ -2,9 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using boas_praticas_II_Alura.src.CAP1;
-using boas_praticas_II_Alura.src.CAP2;
-using boas_praticas_II_Alura.src.CAP3;
+using boas_praticas_II_Alura.src.CAP7;
 
 namespace boas_praticas_II_Alura
 {
@@ -12,19 +10,17 @@ namespace boas_praticas_II_Alura
     {
         static void Main(string[] args)
         {
-            Historico historico = new Historico();
+            FilaDeTrabalho fila = new FilaDeTrabalho();
+            Pedido pedido1 = new Pedido("Mauricio", 100.0, Status.Novo);
+            Pedido pedido2 = new Pedido("Marcelo", 200.0, Status.Novo);
 
-            Contrato c = new Contrato(DateTime.Now, "Julio", TipoContrato.Novo);
+            fila.Adiciona(new PagaPedido(pedido1));
+            fila.Adiciona(new PagaPedido(pedido2));
 
-            historico.Adiciona(c.SalvaEstado());
+            fila.Adiciona(new FinalizarPedido(pedido1));
+            fila.Adiciona(new FinalizarPedido(pedido2));
 
-            c.Avanca();
-            historico.Adiciona(c.SalvaEstado());
-
-            c.Avanca();
-            historico.Adiciona(c.SalvaEstado());
-
-            Console.WriteLine(historico.Pega(1).Contrato.Tipo);
+            fila.Processa();
         }
     }
 }

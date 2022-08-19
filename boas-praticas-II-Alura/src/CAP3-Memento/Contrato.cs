@@ -27,6 +27,7 @@ namespace boas_praticas_II_Alura.src.CAP3
             else if(this.Tipo == TipoContrato.Acertado) this.Tipo = TipoContrato.Concluido;
         }
 
+        //MEMENTO DA CLASSE CONTRATO
         public Estado SalvaEstado()
         {
             return new Estado(new Contrato(this.Data, this.Cliente, this.Tipo));
