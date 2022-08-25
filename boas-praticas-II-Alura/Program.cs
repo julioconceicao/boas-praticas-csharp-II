@@ -1,4 +1,6 @@
-﻿using System;
+﻿using System.Net;
+using System.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -12,19 +14,14 @@ namespace boas_praticas_II_Alura
     {
         static void Main(string[] args)
         {
-            Historico historico = new Historico();
+            string cpf = "1234";
 
-            Contrato c = new Contrato(DateTime.Now, "Julio", TipoContrato.Novo);
+            EmpresaFacade facade = new EmpresaFacadeSingleton().Instancia;
+            Cliente cliente = facade.BuscaCliente(cpf);
+            
+            var fatura = facade.CriaFatura(cliente, 500);
+            facade.GeraCobranca(tipo.Boleto, fatura);
 
-            historico.Adiciona(c.SalvaEstado());
-
-            c.Avanca();
-            historico.Adiciona(c.SalvaEstado());
-
-            c.Avanca();
-            historico.Adiciona(c.SalvaEstado());
-
-            Console.WriteLine(historico.Pega(1).Contrato.Tipo);
         }
     }
 }
